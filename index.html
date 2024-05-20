@@ -18,6 +18,10 @@
     <title>Bootstrap HW</title>
 
     <style>
+  
+.main-div, .main-row{
+        height: 75vh; /* Set the height of the container to 75% of the viewport height */
+    }
         .sign-up{
             background-color:#7E30E1;
             color: white;
@@ -28,6 +32,13 @@
             box-shadow: 10px;
             color: black;
 
+        }
+        .icon1{
+            text-decoration: none;
+            color: gray;
+        }
+        .title-div{
+            height: 60%;
         }
     
     </style>
@@ -148,5 +159,23 @@
         </div>
       </div>
     </nav>
+    <div class="container">
+        <div class="row main-row">
+            <div class="col-6 d-flex flex-column justify-content-center">
+                <h1 class="fs-1">Become a Vanilla JavaScript Developer</h1>
+                <p>In This tatorial, we are going to learn more about JavaScript - for building incredible JavaScript Applications</p>
+                <a class="fs-5  icon1"><img src="clock.png" alt="icon" class="me-2">4 Hours</a>
+                <a class="fs-5 icon1"><img src="clapperboard.png" alt="icon" class="me-2">12 Video</a>
+                <a class="fs-5  icon1"><img src="user.png" alt="icon" class="me-2">10,234 Enrolled</a>
+                  <button type="button" class="btn btn-success mt-5 w-25"> Watch Preview</button>
+            </div>
+
+            
+
+           
+        </div>
+        
+
+    </div>
   </body>
 </html>
