@@ -54,6 +54,10 @@
             background-color: rgb(199, 208, 208);
            
         }
+        .instractor{
+            font-size: 0.9em;
+
+        }
         .link1, .Jasmes, .instractor{
             
             color: #7E30E1;
@@ -71,10 +75,31 @@
         .first-footer{
             width: 50%;
 
-               }       }
 
+               }  }
+      
                
+         @media only screen and (max-width: 600px) {
+            .social img{
+                width: 10%;
+            }
+         }
+         @media only screen and (min-width: 601px) {
+            .social img{
+                width: 20%;
+            }
+         }
 
+         @media only screen and (max-width: 600px) {
+            .watch{
+                width: 40%;
+            }
+         }
+         @media only screen and (min-width: 601px) {
+            .watch{
+                width: 30%;
+            }
+         }
        
         .p-cards{
             display: block;
@@ -83,7 +108,7 @@
             height: 80vh;
         }
         .card-link{
-            text-decoration: none;
+           
             color: #7E30E1;
         }
         .social-footer{
@@ -94,22 +119,46 @@
         }
         .footer-info{
             
-    border: none;
-    color: white;
-    padding: 6px 0px;
-    text-align: center;
-    width: 8vw;
-    height: 8vh;
-    text-decoration: none;
-    
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 8px;
+        border: none;
+        color: white;
+        padding: 6px 0px;
+        text-align: center;
+        width: 8vw;
+        height: 8vh;
+        text-decoration: none;
+
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 8px;
+
+        }
+        .dark{
+           border: none;
+           background-color: #e2dddd;
+           
+           width: 3vw;
+           height: 8vh;
+
+           font-size: 16px;
+           
+           cursor: pointer;
+           border-radius: 50%;
 
         }
 
-       
+    .social{
+        background-color: #e2dddd;
+    }
+    .desc-span{
+        color: #7E30E1;
+    }
+    .rights-info{
+        font-size: 0.9em;
+    }
+   
+
+
 
     
     </style>
@@ -217,7 +266,13 @@
               aria-label="Search"
             />
           </form>
+          
           <div class="d-flex  w-50 justify-content-end mr-10">
+            <button class="dark me-2">
+                <img src="brightness.png" width="90%">
+                
+                </button>
+            
             
               <button class="btn btn-light sign-in me-2">Sign in</button>
               <button class="btn btn-outline-success sign-up me-4 ">
@@ -238,7 +293,7 @@
                 <a class="fs-5  icon1"><img src="clock.png" alt="icon" class="me-2">4 Hours</a>
                 <a class="fs-5 icon1"><img src="clapperboard.png" alt="icon" class="me-2">12 Video</a>
                 <a class="fs-5  icon1"><img src="user.png" alt="icon" class="me-2">10,234 Enrolled</a>
-                  <button type="button" class="btn btn-success mt-5 w-25"> Watch Preview</button>
+                  <button type="button" class="btn btn-success mt-5 watch"> Watch Preview</button>
             </div>
             <div class="col-12 col-md-6">
               <div class="d-flex flex-column justify-content-center align-items-center mail-div mt-5">
@@ -246,13 +301,13 @@
                     <h5 class="fs-3 mb-4">Create Free Account</h5>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-3">
                         <button class="btn btn-light  social me-1 w-auto mb-2 mb-md-0">
-                            <img src="user.png" alt="icon"> Google
+                            <img src="search.png" alt="icon"> Google
                         </button>
-                        <button class="btn btn-outline-success  social me-1 w-auto mb-2 mb-md-0">
-                            <img src="user.png" alt="icon"> Twitter
+                        <button class="btn  social me-1 w-auto mb-2 mb-md-0">
+                            <img src="twitter (1).png" alt="icon" > Twitter
                         </button>
-                        <button class="btn btn-outline-success social w-auto mb-2 mb-md-0">
-                            <img src="user.png" alt="icon"> Facebook
+                        <button class="btn  social w-auto mb-2 mb-md-0">
+                            <img src="facebook.png" alt="icon"> Facebook
                         </button>
                     </div>
                     <div class="mb-2">
@@ -278,10 +333,30 @@
         
 
     </div>
+    <div class="container " style="margin-top: 5rem;">
+        <div class="row justify-content-center ms-5 ">
+            <div class="col-12 col-md-3 d-flex justify-content-center">
+                <span><img src="check-mark.png">Shareable Certificate</span>
+            </div>
+            <div class="col-12 col-md-3 d-flex justify-content-center">
+                <span><img src="check-mark.png">Shareable Certificate</span>
+            </div>
+            <div class="col-12 col-md-3 d-flex justify-content-center">
+                <span><img src="check-mark.png">Shareable Certificate</span>
+            </div>
+            <div class="col-12 col-md-3 d-flex justify-content-center">
+                <span><img src="check-mark.png">Shareable Certificate</span>
+            </div>
+        </div>
+    </div>
+
+
+
+
 
     <!--Grids-->
     <div class="container grid-cards d-flex flex-column justify-content-center align-items-center mt-5 w-100 ">
-     <span class="mt-3">Course Description</span>
+     <span class="mt-3 desc-span">Course Description</span>
         <h2 class="fs-1">
         What will you learn?
      </h2>
@@ -291,10 +366,19 @@
 
             <div class="card w-100 w-md-50" style="width: 25rem;">
                 <div class="card-body">
-                  <h5 class="card-title"><img src="user.png" width="20%"></h5>
-                  <h6 class="card-subtitle mb-2 text-body-secondary">Intro to JavaScript</h6>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                  <a href="#" class="card-link">View Chapter Details</a>
+                    <div style="display: flex; align-items: center;">
+                        <img src="card-icon.png" style="display: inline-block;" width="18%">
+                        <div>
+                            <h6 class="card-subtitle mb-2 text-body-secondary ps-1" style="display: inline-block;">Intro to JavaScript</h6>
+                            <div style="display: flex;">
+                                <span style="display: inline-block; margin-right: 10px;" class="ps-1">Courses-1</span>
+                                <span style="display: inline-block; margin-right: 10px;">Lessons</span>
+                                <span style="display: inline-block;">1 Hours 12Min</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                  <a href="#" class="card-link">View Chapter Details +</a>
                   
                 </div>
               </div>
@@ -305,10 +389,19 @@
 
             <div class="card w-100 w-md-50 ">
                 <div class="card-body">
-                  <h5 class="card-title"><img src="user.png" width="20%"></h5>
-                  <h6 class="card-subtitle mb-2 text-body-secondary">Intro to JavaScript</h6>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                  <a href="#" class="card-link">View Chapter Details</a>
+                    <div style="display: flex; align-items: center;">
+                        <img src="card-icon.png" style="display: inline-block;" width="18%">
+                        <div>
+                            <h6 class="card-subtitle mb-2 text-body-secondary ps-1" style="display: inline-block;">Intro to JavaScript</h6>
+                            <div style="display: flex;">
+                                <span style="display: inline-block; margin-right: 10px;" class="ps-1">Courses-1</span>
+                                <span style="display: inline-block; margin-right: 10px;">Lessons</span>
+                                <span style="display: inline-block;">1 Hours 12Min</span>
+                            </div>
+                        </div>
+                    </div>
+                   <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                  <a href="#" class="card-link">View Chapter Details +</a>
                   
                 </div>
               </div>
@@ -320,12 +413,23 @@
      <div class="row g-3 mt-2 pb-5">
         <div class="col-12 col-md-6">
 
-            <div class="card w-100 w-md-50">
+            <div class="card w-100 w-md-50 ">
                 <div class="card-body">
-                  <h5 class="card-title"><img src="user.png" width="20%"></h5>
-                  <h6 class="card-subtitle mb-2 text-body-secondary">Intro to JavaScript</h6>
+                    <div style="display: flex; align-items: center;">
+                        <img src="card-icon.png" style="display: inline-block;" width="18%">
+                        <div>
+                            <h6 class="card-subtitle mb-2 text-body-secondary ps-1" style="display: inline-block;">Intro to JavaScript</h6>
+                            <div style="display: flex;">
+                                <span style="display: inline-block; margin-right: 10px;" class="ps-1">Courses-1</span>
+                                <span style="display: inline-block; margin-right: 10px;">Lessons</span>
+                                <span style="display: inline-block;">1 Hours 12Min</span>
+                            </div>
+                        </div>
+                    </div>
+                  
+                  
                   <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                  <a href="#" class="card-link">View Chapter Details</a>
+                  <a href="#" class="card-link">View Chapter Details +</a>
                   
                 </div>
               </div>
@@ -336,10 +440,19 @@
 
             <div class="card w-100 w-md-50">
                 <div class="card-body">
-                  <h5 class="card-title"><img src="user.png" width="20%"></h5>
-                  <h6 class="card-subtitle mb-2 text-body-secondary">Intro to JavaScript</h6>
+                    <div style="display: flex; align-items: center;">
+                        <img src="card-icon.png" style="display: inline-block;" width="18%">
+                        <div>
+                            <h6 class="card-subtitle mb-2 text-body-secondary ps-1" style="display: inline-block;">Intro to JavaScript</h6>
+                            <div style="display: flex;">
+                                <span style="display: inline-block; margin-right: 10px;" class="ps-1">Courses-1</span>
+                                <span style="display: inline-block; margin-right: 10px;">Lessons</span>
+                                <span style="display: inline-block;">1 Hours 12Min</span>
+                            </div>
+                        </div>
+                    </div>
                   <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                  <a href="#" class="card-link">View Chapter Details</a>
+                  <a href="#" class="card-link">View Chapter Details +</a>
                   
                 </div>
               </div>
@@ -365,7 +478,7 @@
   
               </div>
             <div class="col-12 col-md-6 d-flex flex-column justify-content-center order-2 order-md-1">
-                <p class="fs-5 instractor mt-3">YOUR INSTRACTOR</p>
+                <p class="instractor mt-3">YOUR INSTRACTOR</p>
                 <h1 class="fs-1">Hi, I am <span class="Jasmes">Jasmes</span>, I will be talking you through lessons</h1>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic illum maiores explicabo deleniti. Hic illum maiores explicabo deleniti</p>
                 <hr>
@@ -422,7 +535,7 @@
                     <div class="col-12 col-md-4 d-flex flex-column justify-content-center align-items-center">
                         <img src="logo.png" width="50%" height="50%" class="align-self-start"/>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit iste, dolorem unde assumenda doloribus itaque deserunt, ab quod voluptates impedit labore similique repudiandae magni molestias</p>
-                    <div class="row g-0 pt-2">
+                    <div class="row g-0 pt-2 align-self-start">
                         <div class="col-4 text-center">
                             <img src="instagram.png" alt="img" class="social-footer"/>
                         </div>
@@ -522,8 +635,19 @@
            
 
 
-
+        
            
+        </div>
+        <hr>
+
+        <div class="container mt-1">
+            <div class="row">
+                <div class="col-6 col-md-6 rights-info">@2023 Geeks-US,UK, Inc. All Rights Reserved</div>
+                <div class="col-6 col-md-1 rights-info">Privacy Policy</div>
+                <div class="col-6 col-md-1 rights-info">Cookie Notice</div>
+                <div class="col-12 col-md-3 rights-info">Do Not Sell My Personal Info</div>
+                <div class="col-12 col-md-1 rights-info">Terms of Use</div>
+            </div>
         </div>
   </body>
 </html>
