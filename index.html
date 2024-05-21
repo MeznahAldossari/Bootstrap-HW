@@ -58,10 +58,15 @@
             background-color: rgb(199, 208, 208);
            
         }
-        .link1{
+        .link1, .Jasmes, .instractor{
             
             color: #7E30E1;
         }
+        @media (max-width: 600px) {
+        .card {
+            height:40vh; /* Increase the image width on small screens */
+        }
+    }
         .p-cards{
             display: block;
         }
@@ -253,7 +258,7 @@
      <div class="row g-3 mt-5">
         <div class="col-12 col-md-6">
 
-            <div class="card" style="width: 25rem;">
+            <div class="card w-100 w-md-50" style="width: 25rem;">
                 <div class="card-body">
                   <h5 class="card-title"><img src="user.png" width="20%"></h5>
                   <h6 class="card-subtitle mb-2 text-body-secondary">Intro to JavaScript</h6>
@@ -267,7 +272,7 @@
 
         <div class="col-12 col-md-6">
 
-            <div class="card" style="width: 25rem;">
+            <div class="card w-100 w-md-50 ">
                 <div class="card-body">
                   <h5 class="card-title"><img src="user.png" width="20%"></h5>
                   <h6 class="card-subtitle mb-2 text-body-secondary">Intro to JavaScript</h6>
@@ -279,11 +284,12 @@
               
         </div>
      </div>
+     <!---->
 
      <div class="row g-3 mt-2 pb-5">
         <div class="col-12 col-md-6">
 
-            <div class="card" style="width: 25rem;">
+            <div class="card w-100 w-md-50">
                 <div class="card-body">
                   <h5 class="card-title"><img src="user.png" width="20%"></h5>
                   <h6 class="card-subtitle mb-2 text-body-secondary">Intro to JavaScript</h6>
@@ -297,7 +303,7 @@
 
         <div class="col-12 col-md-6">
 
-            <div class="card" style="width: 25rem;">
+            <div class="card w-100 w-md-50">
                 <div class="card-body">
                   <h5 class="card-title"><img src="user.png" width="20%"></h5>
                   <h6 class="card-subtitle mb-2 text-body-secondary">Intro to JavaScript</h6>
@@ -312,10 +318,39 @@
 
 
 
-     <div class="row g-3"></div>
+     
      
     
 
     </div>
+
+    <div class="container ">
+        <div class="row main-row">
+            <div class="col-12 col-md-6 order-1 order-md-2">
+                <div class="d-flex flex-column justify-content-center align-items-center mt-5 order-1 order-md-2">
+                  <img src="teacher.jpg" width="80%" height="80%"/>
+  
+                </div>
+  
+              </div>
+            <div class="col-12 col-md-6 d-flex flex-column justify-content-center order-2 order-md-1">
+                <p class="fs-5 instractor mt-3">YOUR INSTRACTOR</p>
+                <h1 class="fs-1">Hi, I am <span class="Jasmes">Jasmes</span>, I will be talking you through lessons</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic illum maiores explicabo deleniti. Hic illum maiores explicabo deleniti</p>
+                <hr>
+                <div class="d-flex flex-column flex-md-row justify-content-evenly align-items-center">
+                    <p><b>45</b><br><span>Lessons</span></p>
+                    <p><b>10,000</b><br><span>Studens</span></p>
+                    <p><b>+12</b><br><span>learning hours</span></p>
+                </div>
+
+            </div>
+           
+            
+
+            
+<!---->
+           
+        </div>
   </body>
 </html>
