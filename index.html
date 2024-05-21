@@ -18,10 +18,6 @@
     <title>Bootstrap HW</title>
 
     <style>
-  
-/* .main-div, .main-row{
-        height: 75vh; /* Set the height of the container to 75% of the viewport height */
-    /* } */
         .sign-up{
             background-color:#7E30E1;
             color: white;
@@ -51,7 +47,7 @@
            
             border: 1px solid #c1bdbd; 
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    border-radius: 15px;
+            border-radius: 15px;
         }
         .grid-cards{
             height: auto;
@@ -64,9 +60,22 @@
         }
         @media (max-width: 600px) {
         .card {
-            height:40vh; /* Increase the image width on small screens */
+            height:40vh;
+            
         }
-    }
+        .footer-info{
+            display: none;
+        }
+       } 
+        @media (min-width: 600px) {
+        .first-footer{
+            width: 50%;
+
+               }       }
+
+               
+
+       
         .p-cards{
             display: block;
         }
@@ -76,6 +85,28 @@
         .card-link{
             text-decoration: none;
             color: #7E30E1;
+        }
+        .social-footer{
+            border-radius: 100%;
+            border: none;
+            width: 40%;
+            height: 80%;
+        }
+        .footer-info{
+            
+    border: none;
+    color: white;
+    padding: 6px 0px;
+    text-align: center;
+    width: 8vw;
+    height: 8vh;
+    text-decoration: none;
+    
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+
         }
 
        
@@ -384,6 +415,115 @@
                 </div>
 
             
+        </div>
+
+        <div class="container mt-5 d-flex align-items-center">
+                <div class="row">
+                    <div class="col-12 col-md-4 d-flex flex-column justify-content-center align-items-center">
+                        <img src="logo.png" width="50%" height="50%" class="align-self-start"/>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit iste, dolorem unde assumenda doloribus itaque deserunt, ab quod voluptates impedit labore similique repudiandae magni molestias</p>
+                    <div class="row g-0 pt-2">
+                        <div class="col-4 text-center">
+                            <img src="instagram.png" alt="img" class="social-footer"/>
+                        </div>
+                        <div class="col-4 text-center">
+                            <img src="twitter.png" alt="img"  class="social-footer"/>
+                        </div>
+                        <div class="col-4 text-center">
+                            <img src="facebook.png" alt="img"  class="social-footer"/>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-12 col-md-4 d-flex flex-column
+                    justify-content-center align-items-center">
+                        <div class="row g-0">
+                            <div class="col-6"><b>Company</b></div>
+                        <div class="col-6"><b>Suppot</b></div>
+                        <div class="col-6">About</div>
+                        <div class="col-6">Help and Suppot</div>
+                        <div class="col-6">Pricing</div>
+                        <div class="col-6">Become</div>
+                        <div class="col-6">Blog</div>
+                        <div class="col-6">Careers</div>
+                        <div class="col-6">FAQ</div>
+                        <div class="col-6">Contact</div>
+                        <div class="col-6">Tutorials</div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="col-12 col-md-4 d-flex flex-column justify-content-center align-items-center">
+                        <h2>Get in Touch</h2>
+                        <p>339 McDermoot Point, NV</p>
+                        <p>Email: <a>support@gmail.com</a></p>
+                        <p>Phone: <b>(000) 123 234 234</b></p>
+                        <div class="row g-5 pt-2">
+                            <div class="col-4 text-center">
+                                <button class="footer-info bg-black">
+                                    <img src="apple2.png" width="12%">
+                                    <span>App Store</span>
+                                    </button>
+
+                            </div>
+                            <div class="col-4 text-end">
+                                <button class="footer-info bg-black">
+                                    <img src="googlePlay.png" width="12%">
+                                    <span>App Store</span>
+                                    </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- <div class="d-flex flex-column justify-content-center align-items-center w-100 w-md-25">
+                    <img src="logo.png" width="50%" height="50%"/>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit iste, dolorem unde assumenda doloribus itaque deserunt, ab quod voluptates impedit labore similique repudiandae magni molestias</p>
+                    <div class="row g-0 pt-2">
+                        <div class="col-4 text-center">
+                            <img src="instagram.png" alt="img" class="social-footer"/>
+                        </div>
+                        <div class="col-4 text-center">
+                            <img src="twitter.png" alt="img"  class="social-footer"/>
+                        </div>
+                        <div class="col-4 text-center">
+                            <img src="facebook.png" alt="img"  class="social-footer"/>
+                        </div>
+                    </div>
+    
+                </div> -->
+    
+            
+
+            <!-- <div class="row g-0">
+                <div class="col-6"><b>Company</b></div>
+                <div class="col-6"><b>Suppot</b></div>
+                <div class="col-6">About</div>
+                <div class="col-6">Help and Suppot</div>
+                <div class="col-6">Pricing</div>
+                <div class="col-6">Become</div>
+                <div class="col-6">Blog</div>
+                <div class="col-6">Careers</div>
+                <div class="col-6">FAQ</div>
+                <div class="col-6">Contact</div>
+                <div class="col-6">Tutorials</div>
+            </div>
+
+            <div class="d-flex flex-column justify-content-center align-items-center">
+                <h2>Get in Touch</h2>
+                <p>339 McDermoot Point, NV</p>
+                <p>Email: <a>support@gmail.com</a></p>
+                <p>Phone: <b>(000) 123 234 234</b></p>
+            </div>
+           
+ -->
+
+
+
+           
+
+
+
+           
         </div>
   </body>
 </html>
